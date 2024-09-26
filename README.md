@@ -30,4 +30,4 @@ This project is a web application that provides real-time weather forecasts. Uti
   - Open the **index.html** file in a browser to view the application.
   - **Enter a location** in the input box to get the weather forecast.
 
-This project served as a foundation for another assignment in college.
+This project was developed based on another project created by me, Augusto Baldino, and Lucas Aquino.
