@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="js/script.js"></script>
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="Styles/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="form">
-            <h3>Confira o clima:</h3>
-            <div class="form-imput-container">
-                <input type="text" placeholder="Digite o nome da cidade" id="city-imput">
-                <button id="search">
-                    Buscar
-                </button>
-            </div>
-        </div>
-        <div id="weather-data">
-            <h2>𖡡 
-                <span id="city">Maceio</span>
-                <img src="" alt="Bandeira do pais" id="country">
-            </h2>
-            <p id="temperature"><span>38</span>&deg;C</p>
-            <div id="description-container">
-                <p id="description-container">Nublado</p>
-                <img src="" alt="Condições do tempo" id="weather-icon">
-            </div>
-            <div id="details-container">
-                <p id="umidity">
-                    <span>48%</span>
-                </p>
-                <p id="wind"></p>
-                    <span>3km/h</span>
-                </p>
-            </div>
+
+    <section class="header">
+        <h1 id="diaHoje"></h1>
+    </section>
+    <div id="container">
+        <div class="search-bar">
+            <img src="/Icons/Lupa-icon.svg" alt="lupa de pesquisa">
+            <input type="text" id="input" placeholder="  Digite o lugar que deseja pesquisar" />
         </div>
     </div>
+    <div class="principal">
+        
+            <img src alt id="weather-icon">
+
+        <section class="middle">
+            <h1 id="current-temperature"></h1>
+            <h1 id="current-weather">PREVISÃO DO TEMPO</h1>
+        </section>
+    </div>
+   
+<div id="TodosCards" class="Cards">
+
+
+    <section class="footer">
+        <div class="card">
+            <p id="date1"></p>
+            <div class="background-icon">
+                <img src alt id="weather-icon1">
+            </div>
+            <p id="temperature1" class="temperature"></p>
+        </div>
+        <div class="card">
+            <p id="date2"></p>
+            <div class="background-icon">
+                <img src alt id="weather-icon2">
+            </div>
+            <p id="temperature2" class="temperature"></p>
+        </div>
+        <div class="card">
+            <p id="date3"></p>
+            <div class="background-icon">
+                <img src alt id="weather-icon3">
+            </div>
+            <p id="temperature3" class="temperature"></p>
+        </div>
+        <div class="card">
+            <p id="date4"></p>
+            <div class="background-icon">
+                <img src alt id="weather-icon4">
+            </div>
+            <p id="temperature4" class="temperature"></p>
+        </div>
+
+    </section>
+    <div class="pais">
+        <img id="bandeira" src alt>
+    </div>
+</div>
+    <script src="app/script.js"></script>
 </body>
+
 </html>

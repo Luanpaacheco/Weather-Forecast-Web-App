@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-color: rgba(47, 85, 211, 0.589);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    padding: 5%;
+    overflow: hidden;
+    
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+body::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:opacity(100px);
+    z-index: -2;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: 'Nunito';
+    color: #F7F7F7;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    height: 44px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin: 30px auto
+}
+
+.search-bar input {
+    font-family: 'Nunito';
+    font-size: larger;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}
+.principal {
+    display: flex; /* Usando Flexbox */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Centraliza horizontalmente dentro da principal */
+    text-align: center; 
+    
+}
+
+#weather-icon {
+    width: 7%; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaçamento à direita do ícone */
+}
+
+.middle {
+    display: flex;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    flex-direction: column; /* Coloca os elementos um em cima do outro */
+}
+
+
+.middle h1 {
+    margin: 0;
+    font-weight: bold;
+    color: #F7F7F7;
+    font-family: 'Nunito';
+    font-size: 2vw;
+    padding: 10px;
+}
+
+#current-temperature {
+    font-weight: bold;
+    color: #F7F7F7;
+    font-family: 'Nunito';
+    font-size: 2.5vw;
+    padding: 10px;
+}
+.Cards{
+    display: none;
+}
+
+.footer {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.card {
+    width: 30%;
+    max-width: 150px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card p {
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Nunito';
+    color: #F7F7F7;
+    margin: 0;
+    padding: 5px;
+}
+
+.background-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: #a0a0a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.background-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .header h1,
+    .middle h1,
+    .card p {
+        font-size: 5vw;
+    }
+}
+.pais img{
+    height: 10%;
+}
+/* *{
+    padding: 0;
+    margin: 0;
+    
+}
+.todosElementos{
+    align-items: center;
+}
+.DoisQuadrado{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-top: 15px;
+}
+.fundo{
+    
+}
+.botao{
+    border-radius: 15px;
+    width: 70px;
+    height: auto;
+    border-style:solid;
+    border-color: black;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+
+
+}
+.pesquisar{
+    flex: 1;
+    padding: 10px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; 
+}
+body{
+    background-image: url('/pexels-pixabay-2156.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    /* background-position: center; 
+    background-repeat: no-repeat; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.hide{
+    display: none;
+
+}
+.container{
+    background: rgba( 74, 144, 226, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17.5px );
+    -webkit-backdrop-filter: blur( 17.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    padding: 2rem;
+    color: #fdfdfd;
+    width: 200px;
+}
+.container-dinheiro{
+    background-color: #7a75e497;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+    width: 200px;
+}
+.bloco1{
+    align-items: center;
+    justify-content: center;
+
+}
+.container-pesquisa{
+    background-color: #7a75e497;
+    
+    padding: 1rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+    align-items: center;
+    width: 500px;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.form-imput-container{
+    width: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    max-width: 500px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box
+}
+.form1{
+    margin-left: 60PX;
+
+}
+.form{
+    margin-left: 40PX;
+    
+}
+.form-input-container{
+    display: flex;
+}
+.form input{
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+}
+.form button{
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color:#8dd0f5 ;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#weather-data{
+    border-top: 1px solid #ffffff47;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+.dinheiro{
+    border-top: 1px solid #ffffff47;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+.pais-Brasil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem; 
+     
+    gap:10PX;
+}
+.pais-X{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem; 
+    gap:10PX; 
+
+}
+#weather-data h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+
+}
+#weather-data h2 i{
+    font-size:1rem;
+}
+#weather-data span{
+    margin:0.6rem;
+}
+#country{
+    height: 40px;
+} 
+
+#description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin:0.6rem 0;
+    
+    
+}
+#description-container img{
+    height: 40px;
+    width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#details-container #wind{
+    border-right: 1px solid #fff;
+    margin: 0.6rem;
+    padding: 0.6rem;
+    
+}
+#temperature{   
+} */
